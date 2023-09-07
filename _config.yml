@@ -4,9 +4,9 @@ title: "Let's make awesome 3D-printable pet robots"
 description: "Software platform for DIY 3D-printable pet robots for makers and STEM!"
 logo: 'assets/images/logo.png'
 favicon: 'favicon.ico'
-baseurl: /
+baseurl: ''
 google_analytics: 'G-4NDZ3RMSF7'
-disqus: 'demowebsite'
+disqus: 'kaia-ai'
 mailchimp-list: 'https://remake.us4.list-manage.com/subscribe?u=ce7793379be11c5c705d99df0&id=62f859271b'
 include: ["_pages"]
 permalink: /:title/
@@ -19,7 +19,7 @@ authors:
 #    gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: marketing@remake.ai
     web: https://remake.ai
-#    twitter: https://twitter.com/remakeai/
+    twitter: https://twitter.com/remakeai/
     description: "REMAKE.AI marketing"
 #  john:
 #    name: John
