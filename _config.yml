@@ -1,7 +1,7 @@
 # Site
 name: "Kaia.ai"
 title: "Let's make awesome 3D-printable pet robots"
-description: "Software platform for DIY 3D-printable pet robots for makers and STEM!"
+description: "A software platform for DIY 3D-printable pet robots!"
 logo: 'assets/images/logo.png'
 favicon: 'favicon.ico'
 baseurl: ''
@@ -9,27 +9,43 @@ google_analytics: 'G-4NDZ3RMSF7'
 disqus: 'kaia-ai'
 mailchimp-list: 'https://remake.us4.list-manage.com/subscribe?u=ce7793379be11c5c705d99df0&id=62f859271b'
 include: ["_pages"]
-permalink: /:title/
+permalink: /blog/:title/
+github_url: https://github.com/kaiaai
+youtube_url: https://youtube.com/@remakeai/
+twitter_url: https://twitter.com/@remakeai/
+instagram_url: https://www.instagram.com/kaia__ai
+facebook_url: https://www.facebook.com/kaiaai/
+facebook_group_url: https://www.facebook.com/groups/243730868651472/
+mailchimp_signup_url: http://eepurl.com/gBV7tb
+by: REMAKE.AI
+by_url: https://remake.ai
+
+# safe: true
+
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-webp
 
 # Authors
 authors:
   marketing:
-    name: REMAKE.AI Marketing
-    display_name: remake_ai_marketing
+    name: REMAKE.AI
+    display_name: marketing
+    avatar: 'assets/images/kaia_avatar.png'
 #    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: marketing@remake.ai
+    email: marketing@makerspet.com
     web: https://remake.ai
     twitter: https://twitter.com/remakeai/
-    description: "REMAKE.AI marketing"
-#  john:
-#    name: John
-#    display_name: John    
-#    avatar: 'assets/images/avatar.png'
-#    gravatar: b1cc14991db7a456fcd761680bbc8f81
-#    email: wowthemesnet@gmail.com
-#    web: https://www.wowthemes.net
-#    twitter: https://twitter.com/wowthemesnet
-#    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    description: "REMAKE.AI"
+  iliao:
+    name: Ilia O.
+    display_name: Ilia    
+    avatar: 'assets/images/ilia_avatar.webp'
+    # gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: iliao@kaia.ai
+    # web: https://www.wowthemes.net
+    twitter: https://twitter.com/remakeai/
+    description: "Hardware, software and startups 24/7"
 
 # Plugins
 plugins:
@@ -38,6 +54,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-webp
+  - jekyll-redirect-from
     
 # Archives
 jekyll-archives:
@@ -70,3 +88,38 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+webp:
+  enabled: true
+  
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 75
+
+  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["assets/images"]
+
+  # Whether to search in nested directories or not
+  nested: false
+
+  # add "".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
+  # File extensions for animated gif files 
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  # Eg : "/usr/local/bin/cwebp"
+  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+  # append '.webp' to filename after original extension rather than replacing it.
+  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
+  append_ext: false
