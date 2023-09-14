@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about
 comments: false
-redirect_to: https://makerspet.com/about
 ---
 <div class="row justify-content-between">
 <div class="col-md-8 pt-4">
@@ -83,9 +82,9 @@ redirect_to: https://makerspet.com/about
 <div class="row justify-content-between">
 <div class="col-md-6 pt-4">
 
-<h5 class="h5">Contact</h5>
+<h5 class="h5" id="contact">Contact</h5>
 
-<p>We are located in Los Angeles, CA. For business inquiries, you can contact us using this <a href="https://us4.list-manage.com/contact-form?u=ce7793379be11c5c705d99df0&form_id=1bc48ab0e8e259a853cd481de8a4f1b2">contact form</a>.</p>
+<p>We are located in Los Angeles, CA. Get in touch with us via <a href="{{ site.facebook_url }}">Facebook Messenger</a> or using this <a href="https://us4.list-manage.com/contact-form?u=ce7793379be11c5c705d99df0&form_id=1bc48ab0e8e259a853cd481de8a4f1b2">contact form</a>.</p>
 
 <p>We usually reply within 24 hours.</p>
 
