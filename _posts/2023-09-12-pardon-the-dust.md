@@ -16,7 +16,8 @@ Please pardon the dust - we are setting things up!
 Setting up the software platform may take a while. In the meantime, please
 
 - join our [mailing list]({{ site.mailchimp_signup_url }})
-- joint our [Facebook group]({{ site.facebook_group_url }})
-- browse our [hardware site](https://makerspet.com)
-- browse our [startup home site](https://remake.com)
+- join our [Facebook group]({{ site.facebook_group_url }})
+- join our [Reddit]({{ site.reddit_group_url }})
+- browse the [hardware site](https://makerspet.com)
+- browse the [startup home site](https://remake.com)
 - and follow us
