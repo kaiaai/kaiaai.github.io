@@ -6,7 +6,9 @@ categories: [ Announcements ]
 # tags: [red, yellow]
 image: assets/images/webp/screenshot1-1024x576.webp
 # description: "Please pardon the dust - we are setting thingsup!"
-comments: false
+featured: true
+hidden: true
+# comments: false
 # rating: 4.5
 ---
 Please pardon the dust - we are setting things up!
