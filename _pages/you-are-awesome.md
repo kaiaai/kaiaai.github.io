@@ -16,7 +16,8 @@ comments: false
         <p>A large community lowers product cost for you – and everyone.<br>
         Will you please help us by letting your friends know about us?</p>
 
-        <p>Also, here is our <a href="{{site.facebook_group_url}}">"3D Printable DIY Home Robots"</a> Facebook group!</p>
+        <p>Also, here are our "3D Printable Home Robots" <a href="{{site.facebook_group_url}}">Facebook group</a>
+        and <a href="{{site.reddit_group_url}}">Reddit</a>!</p>
 
         {% include share-horizontal.html %}
 

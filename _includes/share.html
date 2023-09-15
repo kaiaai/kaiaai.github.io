@@ -21,6 +21,12 @@
             </a>
         </li>
 
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-reddit"></i>
+            </a>
+        </li>
+
     </ul>
     {% if page.comments != false %}
     <div class="sep">
