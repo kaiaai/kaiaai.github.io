@@ -19,5 +19,5 @@ Setting up the software platform may take a while. In the meantime, please
 - join our [Facebook group]({{ site.facebook_group_url }})
 - join our [Reddit]({{ site.reddit_group_url }})
 - browse the [hardware site](https://makerspet.com)
-- browse the [startup home site](https://remake.com)
+- browse the [startup home site](https://remake.ai)
 - and follow us
