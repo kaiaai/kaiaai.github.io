@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bot hides, plays ball in manual simulation"
+title:  "Bot hides, plays ball in manual VR simulation"
 author: iliao
 categories: [ Announcements ]
 # tags: [red, yellow]
@@ -21,4 +21,7 @@ I will be filling out more details over time. Here are the videos:
 If you would like to follor the step-by-step tutorial, please make sure to
 set up your Windows PC folliwing these instructions [here](https://kaia.ai/blog/local-pc-setup-windows/).
 
-- Step-by-step 12-minute [tutorial](https://youtu.be/cw0vhTgsZuo).
+- The mother-of-it-all step-by-step 12-minute [tutorial](https://youtu.be/cw0vhTgsZuo).
+- Snoopy self-drives in a 3D VR (Gazebo) simulation [demo](https://youtu.be/H4EWHLwpE1w)
+  - The (simple) self-driving code is [here](https://github.com/kaiaai/kaiaai_simulations/blob/main/kaiaai_gazebo/src/self_drive_gazebo.cpp).
+- Snoopy kicks a ball around (manually controlled) https://youtu.be/uZ3i57j0JgY
