@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bot hides, plays ball in manual VR simulation"
+title:  "Bot plays ball, hides in manual VR sim"
 author: iliao
 categories: [ Announcements ]
 # tags: [red, yellow]
