@@ -4,7 +4,7 @@ title:  "Tutorial: Simulate Home Robot in 3D VR (ROS2 Gazebo)"
 author: iliao
 categories: [ Tutorials, Simulation, ROS2, Gazebo, Snoopy ]
 # tags: [red, yellow]
-image: assets/images/webp/gazebo_maldives.webp
+image: assets/images/webp/snoopy_sim_ball.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
 # featured: true
 # hidden: true

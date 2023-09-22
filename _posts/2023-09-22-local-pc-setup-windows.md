@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Tutoial: Windows PC setup"
+title:  "Tutorial: Windows PC setup"
 author: iliao
-categories: [ Announcements ]
+categories: [ Tutorial, Docker ]
 # tags: [red, yellow]
 image: assets/images/webp/pc-setup.webp
 # description: "Please pardon the dust - we are setting thingsup!"
-featured: true
-hidden: true
+# featured: true
+# hidden: true
 # comments: false
 # rating: 4.5
 ---
