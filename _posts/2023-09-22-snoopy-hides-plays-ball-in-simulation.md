@@ -22,17 +22,17 @@ The 3D VR simulation runs in ROS2 Gazebo simulator. You can find the step-by-ste
 
 ## Snoopy self-drives around a simulated living room
 <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H4EWHLwpE1w?si=sRpGFDHH_JMy4vx_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CwbzGkAYg1U?si=kZBRULOJIamBONxJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Snoopy plays ball, hides under the table
 Disclaimer - I drive Snoopy manually here. I will be adding fully automatic behaviors later this year.
 <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uZ3i57j0JgY?si=0qU3E98t2nCkRX2Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p2q-DGV23C8?si=jPdXV-DhgHcNHy9R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Will you play with me?
+## Snoopy wants attention - will you play with me?
 Disclaimer - I drive Snoopy manually here. I will be adding fully automatic behaviors later this year.
 <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bDP7QfPtDq0?si=Rj3htMv_JkN61W10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SZCuKf61_6E?si=eMInQLB6TIymkhRN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
