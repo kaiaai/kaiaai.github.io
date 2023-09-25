@@ -18,14 +18,15 @@ Arduino library.
 I don't normally expect anyone to be rebuilding this library, so these instructions are,
 essentially, a documentation for myself.
 
-In some cases, tayloring [Kaia.ai](https://kaia.ai) software for your particular robot
+In some cases, tayloring Kaia.ai software for your particular robot
  may require tweaking your robot's Kaia.ai-compatible firmware.
  For example a firmware tweak may be necessary when adding new robot sensors.
-T
+
 The Micro-ROS library communicates sensor data from the Arduino micro-controller (ESP32 in our case)
-and the PC running ROS2, where the sensor data gets processed. If the newly-added sensor
-output the type of data that the Micro-ROS library does not support already,
-the Micro-ROS has to be extended accordingly. That includes tweaking the Micro-ROS code - e.g.
+to the PC running ROS2, where the sensor data gets processed.
+
+If the newly-added sensor outputs the type of data that the Micro-ROS library does not support already,
+the Micro-ROS library has to be extended accordingly. That includes tweaking the Micro-ROS code - e.g.
 adding a special message type for the new sensor's data - followed by rebuilding the library.
  
 As the first step in the process, follow these steps to
