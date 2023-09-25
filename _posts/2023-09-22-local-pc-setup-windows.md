@@ -36,6 +36,6 @@ using ROS2 Rviz2 robot viewer, Gazebo 3D robot simulator, rqt robot internals vi
   - Open a Window PowerShell or command window.
   - Type `docker pull kaiaai/kaiaai-ros-dev:humble`.
 
-Once your `docker pull` succeeds, you are good to go (fingers crossed)!``
+Once your `docker pull` succeeds, you are good to go (fingers crossed)!
 
 <small>Credits: image by storyset on Freepik</small>
