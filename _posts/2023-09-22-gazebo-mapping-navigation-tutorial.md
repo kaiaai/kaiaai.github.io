@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tutorial: Create room map, navigate in ROS2 Gazebo"
+title:  "Tutorial: Create a room map, navigate in ROS2 Gazebo"
 author: iliao
 categories: [ Tutorials, Simulation, ROS2, Gazebo, Snoopy, Mapping, Navigation ]
 # tags: [red, yellow]
