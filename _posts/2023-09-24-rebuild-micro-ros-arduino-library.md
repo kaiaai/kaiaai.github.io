@@ -50,6 +50,9 @@ git clone -b iron --depth 1 https://github.com/kaiaai/micro_ros_arduino_kaiaai m
 docker run -it --rm -v .\micro_ros_kaiaai:/project --env MICROROS_LIBRARY_FOLDER=extras microros/micro_ros_static_library_builder:iron
 ```
 
+- manually copy `src\micro_ros_kaiaai.h` from the [GitHub repo's](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
+to `Arduino\micro_ros_kaiaai\src\`
+
 Please note, you can also rebuild the library for a particular platform only, e.g. for ESP32. By default,
 Micro-ROS Arduino library builds for `stm32`, `OpenCR`, `Teensyduino`, `samd`, `sam`, `mbed`,
 `esp32` and `mbed_portenta` architectures.
