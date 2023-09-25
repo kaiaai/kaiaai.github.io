@@ -47,11 +47,18 @@ see these [instructions](https://kaia.ai/blog/local-pc-setup-windows/)
 ```
 cd %HOMEPATH%\Documents\Arduino\libraries
 git clone -b iron --depth 1 https://github.com/kaiaai/micro_ros_arduino_kaiaai micro_ros_kaiaai
+```
+- if necessary, revise your library source code
+- if necessary, add your new custom message repo to `extras/library_generation/extra_packages/extra_packages.repos`
+- build the library
+```
 docker run -it --rm -v .\micro_ros_kaiaai:/project --env MICROROS_LIBRARY_FOLDER=extras microros/micro_ros_static_library_builder:iron
 ```
 
 - manually copy `src\micro_ros_kaiaai.h` from the [GitHub repo's](https://github.com/kaiaai/micro_ros_arduino_kaiaai)
 to `Arduino\micro_ros_kaiaai\src\`
+- optionally, update `library.properties`
+- optionally, commit and push the updated library back to GitHub
 
 Please note, you can also rebuild the library for a particular platform only, e.g. for ESP32. By default,
 Micro-ROS Arduino library builds for `stm32`, `OpenCR`, `Teensyduino`, `samd`, `sam`, `mbed`,
