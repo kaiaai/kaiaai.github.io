@@ -53,7 +53,7 @@ docker exec -it kaiaai-ros-dev-humble bash
 ```
 
 - In the newly opened window, launch Google Cartographer to start creating a map of the room.
-The Cartographer launch script also opens the Rviz2 ROS2 viewer to view the map, 
+The Cartographer launch script also opens the Rviz2 ROS2 viewer to view the map.
 ```
 ros2 launch kaiaai_bringup cartographer.launch.py use_sim_time:=true
 ```
