@@ -112,7 +112,7 @@ docker exec -it kaiaai-ros-dev-humble bash
 - In the newly-opened shell, launch ROS2 Navigation and load the newly-created map.
 This launch script also opens a new Rviz2 window.
 ```
-ros2 launch kaiaai_bringup navigation.launch.py use_sim_time:=true map:=$HOME/my_map.yaml
+ros2 launch kaiaai_bringup navigation.launch.py map:=$HOME/my_map.yaml
 ```
 
 - Manually specify Snoopy's location on the map in Rviz2.
