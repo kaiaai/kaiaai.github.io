@@ -106,4 +106,3 @@ overall project costs affordable. An inexpensive laser scanner like this cannot 
 above or below its scanning plane. For example, Snoopy cannot see obstacles that have a short height.
 You can work around this limitation by manually placing objects - on the floor - that are tall enough
 for Snoopy to "see" and avoid. This works both for the real-world operation and simulations.
-
