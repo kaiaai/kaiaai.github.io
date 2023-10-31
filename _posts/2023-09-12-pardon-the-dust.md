@@ -2,7 +2,7 @@
 layout: post
 title:  "Pardon the dust"
 author: iliao
-categories: [ Announcements ]
+categories: [ Announcement ]
 # tags: [red, yellow]
 image: assets/images/webp/screenshot1-1024x576.webp
 # description: "Please pardon the dust - we are setting thingsup!"

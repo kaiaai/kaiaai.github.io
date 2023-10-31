@@ -1,8 +1,8 @@
 ---
 layout: post
-title: A Living Room Simulation 3D Model
+title: A Living Room Simulation Gazebo VR 3D Model
 author: iliao
-categories: [ ROS2, Gazebo Simulation ]
+categories: [ ROS2, Gazebo, Simulation ]
 image: assets/images/webp/gazebo_maldives.webp
 # featured: true
 # hidden: true

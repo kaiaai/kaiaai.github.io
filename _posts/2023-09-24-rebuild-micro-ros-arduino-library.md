@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial: build Micro-ROS Arduino library"
 author: iliao
-categories: [ Tutorials, Micro-ROS, Arduino ]
+categories: [ Tutorial, Micro-ROS, Arduino ]
 # tags: [red, yellow]
 image: assets/images/webp/micro-ros-arduino-logos.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"

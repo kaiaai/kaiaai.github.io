@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial: Simulate Home Robot in 3D (ROS2 Gazebo)"
 author: iliao
-categories: [ Tutorials, Simulation, ROS2, Gazebo, Snoopy ]
+categories: [ Tutorial, Simulation, ROS2, Gazebo, Snoopy ]
 # tags: [red, yellow]
 image: assets/images/webp/snoopy_sim_ball.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
@@ -36,7 +36,7 @@ Here are the steps in the tutorial:
 - Stop teleop and launch self-driving
 - Snoopy drives around the living room automatically
 
-## Step-by-step Snoopy simulation tutorial
+## Tutorial: Step-by-step Snoopy 3D VR Gazebo simulation
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lock_Erbg_E?si=hHRQBSiTV3rw61v_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>

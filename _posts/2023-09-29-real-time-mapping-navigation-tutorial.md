@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial: Map, navigate your room in real time - ROS2"
 author: iliao
-categories: [ Tutorials, Simulation, ROS2, real-time, Snoopy, Mapping, Navigation ]
+categories: [ Tutorial, Simulation, ROS2, Real-time, Snoopy, Mapping, Navigation ]
 # tags: [red, yellow]
 image: assets/images/webp/snoopy-mapping-screenshot.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
@@ -22,7 +22,7 @@ If you are using a Linux PC, please install [Docker](https://docs.docker.com/eng
 The (simple) self-driving code is
 [here](https://github.com/kaiaai/kaiaai_simulations/blob/main/kaiaai_gazebo/src/self_drive_gazebo.cpp).
 
-## Real-time mapping tutorial
+## Tutorial: Real-time mapping
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IV3-pMu3GIM?si=6i-ZFWO5rgdwx8BZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
@@ -79,7 +79,7 @@ ros2 run nav2_map_server map_saver_cli -f $HOME/my_map
 - Press `CTRL-C` stop Rviz2 in Rviz2 shell window.
 
 
-## Real-time navigation tutorial
+## Tutorial: Real-time navigation
 
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E0QS8A8Q4Vw?si=rIffsY0ELA5DtJv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
