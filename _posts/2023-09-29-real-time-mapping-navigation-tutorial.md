@@ -79,7 +79,7 @@ ros2 run nav2_map_server map_saver_cli -f $HOME/my_map
 - Press `CTRL-C` stop Rviz2 in Rviz2 shell window.
 
 
-## Real-time navigation
+## Real-time navigation tutorial
 
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E0QS8A8Q4Vw?si=rIffsY0ELA5DtJv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
