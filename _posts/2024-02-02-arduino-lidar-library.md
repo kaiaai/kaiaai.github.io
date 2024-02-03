@@ -35,12 +35,12 @@ This is what the Arduino LiDAR/LDS library does:
 - optional real-time angle and distance computation on the Arduino MCU
   - e.g. for low-latency object avoidance
 
-## Video: Neato XV11 working with ROS2 using micro-ROS
+Video: Neato XV11 working with ROS2 using micro-ROS
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kfk1Q0RSJpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Video: Xiaomi Mi 1st gen LDS02RR working with ROS2 using micro-ROS
+Video: Xiaomi Mi 1st gen LDS02RR working with ROS2 using micro-ROS
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/STbCVhdgLSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
