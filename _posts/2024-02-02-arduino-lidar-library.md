@@ -25,7 +25,7 @@ Here is a list of supported and to-be-supported LiDARs/LDS sensors:
 - 3irobotics Delta2G (TODO)
 - Xiaomi LDS01RR (TODO)
 - Hitachi-LG HLS-LFCD2 (TODO)
-- LDLIDAR sensors (TODO)
+- LDROBOT sensors (TODO)
 
 This is what the Arduino LiDAR/LDS library does:
 - wraps various LiDAR/LDS sensors into a single platform API
