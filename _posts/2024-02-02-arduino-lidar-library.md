@@ -11,9 +11,7 @@ image: assets/images/webp/lidar_sensors.webp
 # comments: false
 # rating: 4.5
 ---
-# Developer Update
-
-I have combined support for various spinning LiDAR/LDS sensors into an [Arduino LDS library](https://github.com/kaiaai/LDS) with a single platform API. You can install this library from the Arduino Library Manager GUI.
+Developer Update - I have combined support for various spinning LiDAR/LDS sensors into an [Arduino LDS library](https://github.com/kaiaai/LDS) with a single platform API. You can install this library from the Arduino Library Manager GUI.
 
 Why support many LiDAR/LDS sensors? The reason is to make the hardware - supported by Kaia.ai platform - affordable to as many prospective users as possible.
 
