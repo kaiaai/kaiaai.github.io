@@ -13,7 +13,7 @@ image: assets/images/webp/lidar_sensors.webp
 ---
 Developer Update - I have combined support for various spinning LiDAR/LDS sensors into an [Arduino LDS library](https://github.com/kaiaai/LDS) with a single platform API. You can install this library from the Arduino Library Manager GUI.
 
-Why support many LiDAR/LDS sensors? The reason is to make the hardware - supported by Kaia.ai platform - affordable to as many prospective users as possible.
+Why support many LiDAR/LDS sensors? The reason is to make the hardware - supported by Kaia.ai platform - affordable to as many prospective users as possible. Some of the sensors listed below are sold as used robot vacuum cleaner spare parts and cost as low as $16 or so (including shipping) available on AliExpress.
 
 Here is a list of supported and to-be-supported LiDARs/LDS sensors:
 - YDLIDAR X4 (supported)
@@ -22,10 +22,10 @@ Here is a list of supported and to-be-supported LiDARs/LDS sensors:
 - Xiaomi Mi 1st gen LDS02RR (supported)
 - Neato XV11 (supported)
 - RPLIDAR A1 (in progress)
-- 3irobotics Delta-2G, Delta-2A (TODO)
+- 3irobotics Delta-2G, Delta-2A, others (TODO)
 - Xiaomi LDS01RR (TODO)
 - Hitachi-LG HLS-LFCD2 (TODO)
-- LDROBOT sensors (TODO)
+- LDROBOT LD14P, LD20, others (TODO)
 
 Here are examples of using the Arduino LDS library:
 - a starter [sample Arduino sketch](https://github.com/kaiaai/LDS/tree/main/examples/lds_basic_esp32) that comes with the LDS library
