@@ -40,9 +40,6 @@ This is what the Arduino LiDAR/LDS library does:
 - optional real-time angle and distance computation on the Arduino MCU
   - e.g. for low-latency object avoidance
 
-Some of the LiDAR/LDS sensors listed above do not have built-in motor control. These sensors (LDS02RR, Neato XV11, Delta-2G, Delta-2A, etc.) therefore require an adapter PCB that implements motor control. Here are adapter PCBs:
-- [adapter PCB](https://github.com/makerspet/pcb/tree/main/lds02rr_adapter) for LDS02RR
-- [adapter PCB](https://github.com/makerspet/pcb/tree/main/neato_delta_adapter) for Neato XV1, Delta-2A, Delta-2G
 
 Video: Neato XV11 working with ROS2 using micro-ROS, Arduino LDS library
 <div class="text-center">
@@ -57,4 +54,14 @@ Video: Xiaomi Mi 1st gen LDS02RR working with ROS2 using micro-ROS, Arduino LDS 
 Video: RPLIDAR A1 working with ROS2 using micro-ROS, Arduino LDS library
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f8IYjfiXsMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+## Adapter Board
+Some of the LiDAR/LDS sensors listed above do not have built-in motor control. These sensors (LDS02RR, Neato XV11, Delta-2G, Delta-2A, etc.) therefore require an adapter PCB that implements motor control. Here are adapter PCBs:
+- [adapter PCB](https://github.com/makerspet/pcb/tree/main/lds02rr_adapter) for LDS02RR
+- [adapter PCB](https://github.com/makerspet/pcb/tree/main/neato_delta_adapter) for Neato XV1, Delta-2A, Delta-2G
+
+Video: Adapter PCB for Xiaomi LDS02RR
+<div class="text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wes9GYomUdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
