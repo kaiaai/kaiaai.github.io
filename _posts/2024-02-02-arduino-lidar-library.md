@@ -15,17 +15,28 @@ Developer Update - I have combined support for various spinning LiDAR/LDS sensor
 
 Why support many LiDAR/LDS sensors? The reason is to make the hardware - supported by Kaia.ai platform - affordable to as many prospective users as possible. Some of the sensors listed below are sold as used robot vacuum cleaner spare parts and cost as low as $16 or so (including shipping) available on AliExpress.
 
-Here is a list of supported and to-be-supported LiDARs/LDS sensors:
-- YDLIDAR X4 (supported)
-- YDLIDAR X2/X2L (supported)
-- YDLIDAR X3/X3PRO (supported)
-- Xiaomi Mi 1st gen LDS02RR (supported)
-- Neato XV11 (supported)
-- RPLIDAR A1 (in progress)
-- 3irobotics Delta-2G, Delta-2A, others (TODO)
-- Xiaomi LDS01RR (TODO)
-- Hitachi-LG HLS-LFCD2 (TODO)
-- LDROBOT LD14P, LD20, others (TODO)
+Here is a list of supported and to-be-supported (*) low-cost LiDAR/LDS sensors. "Tria" indicates triangulation LDS, as opposed to "ToF" time-of-flight LiDARs. You can purchase these sensors off AliExpress, Amazon, eBay and online stores that cater to robotics enthusiasts. The retail prices are approximate, as of 02/2024. The safety class indicates what the model's official datasheet says available. Some LiDAR/LDS models do not have official datasheets available publically.
+
+| Model                | Type | Scans   | Points  | Range   | Cost     | Service | Safety  | Ambient | Spec |
+|                      |      | per sec | per sec | meters  | retail   | life    |         | Lux     |      |
+|:---------------------|:-----|---------|:--------|:--------|:---------|:--------|:--------|:--------|:-----|
+| YDLIDAR X4           | Tria |  6-12Hz | 5KHz    | 0.12-10 | ~$70-90  |         | Class 1 |         | [PDF](https://www.ydlidar.com/Public/upload/files/2024-02-01/YDLIDAR%20X4%20Data%20sheet%20V1.2(240125).pdf) |
+| YDLIDAR X4 PRO       | Tria |  6-12Hz | 5KHz    | 0.12-10 | ~$75-100 | 1,500h  | Class 1 |         | [PDF](https://www.ydlidar.com/Public/upload/files/2024-02-01/YDLIDAR%20X4PRO%20Datasheet%20V1.1%20(240124).pdf) |
+| YDLIDAR X2/X2L       | Tria |  5..8Hz | 3KHz    | 0.12-10 | ~$75-100 | 1,500h  | Class 1 |         | [PDF](https://www.ydlidar.com/Public/upload/files/2024-02-01/YDLIDAR%20X2%20Data%20Sheet%20V1.2(240124).pdf) |
+| YDLIDAR X3           | Tria |  5-10Hz | 3KHz    | 0.12-8  | ~$65     |         |         | 2K?     |      |
+| YDLIDAR X3 PRO       | Tria |  6-12Hz | 4KHz    | 0.12-8  | ~$70     | 1,500h  |         | 40K?    | [Link](https://static.generation-robots.com/media/YDLIDARX4PRODatasheet.pdf) |
+| XIAOMI LDS02RR       | Tria |   5Hz   | 1.8KHz  | 0.15-6? | ~$16     |         |         |         |      |
+| XIAOMI LDS01RR*      | ToF  |   5Hz   |         | 0.15-9  | ~$37     | 1,095h  | Class 1 |         |      |
+| Neato XV11           | Tria |         |         |         |          |         |         |         |      |
+| SLAMTEC RPLIDAR A1M8-R4 | Tria |  1-10Hz | 8KHz | 0.15-6  |          |         | Class 1 |         | [PDF](https://www.slamtec.ai/wp-content/uploads/2023/11/LD108_SLAMTEC_rplidar_datasheet_A1M8_v3.0_en.pdf) |
+| SLAMTEC RPLIDAR A1M8-R5 | Tria |  1-10Hz | 8KHz | 0.15-12 | ~$99     |         | Class 1 |         | [PDF](https://www.slamtec.ai/wp-content/uploads/2023/11/LD108_SLAMTEC_rplidar_datasheet_A1M8_v3.0_en.pdf) |
+| 3irobotics Delta-2A  | Tria |  6.2Hz  | 5KHz    |         | ~$28     |         |         | 1K?     |      |
+| 3irobotics Delta-2G  | Tria |         |         |         | ~$17     |         |         |         |      |
+| Hitachi-LG HLS-LFCD2*| ToF  |   5Hz   | 1.8KHz  | 0.12-3.5|          |         | Class 1 | 10K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/) |
+| Hitachi-LG HLS-LFCD3*| Tria |   5Hz   | 2.3KHz  | 0.16-8  | ~$17     | 1,000h  | Class 1 | 25K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_02/) |
+| LDROBOT LD14P*       | Tria | 2..8Hz  | 4KHz    | 0.1-8   | ~$47     | 2,200h  |         | 80K?    |      |
+| LDROBOT LD20*        |      |         |         |         |          |         |         |         |      |
+| RPLIDAR C1*          |      |         |         |         |          |         |         |         |      |
 
 Here are examples of using the Arduino LDS library:
 - a starter [sample Arduino sketch](https://github.com/kaiaai/LDS/tree/main/examples/lds_basic_esp32) that comes with the LDS library
