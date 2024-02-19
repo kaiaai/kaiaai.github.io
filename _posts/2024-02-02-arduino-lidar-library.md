@@ -27,12 +27,12 @@ Here is a list of supported and to-be-supported (*) low-cost LiDAR/LDS sensors. 
 | YDLIDAR X3 PRO       | Tria |  6-12Hz | 4KHz    | 0.12-8  | ~$70     | 1,500h  |         | 40K?    | [Link](https://static.generation-robots.com/media/YDLIDARX4PRODatasheet.pdf) |
 | XIAOMI LDS02RR       | Tria |   5Hz   | 1.8KHz  | 0.15-6? | ~$16     |         |         |         |      |
 | XIAOMI LDS01RR*      | ToF  |   5Hz   |         | 0.15-9  | ~$37     | 1,095h  | Class 1 |         |      |
-| Neato XV11           | Tria |         |         |         |          |         |         |         |      |
+| Neato XV11           | Tria |   5Hz   | ~2KHz   | 0.15-6? | ~$35     |         |         |         |      |
 | SLAMTEC RPLIDAR A1M8-R4 | Tria |  1-10Hz | 8KHz | 0.15-6  |          |         | Class 1 |         | [PDF](https://www.slamtec.ai/wp-content/uploads/2023/11/LD108_SLAMTEC_rplidar_datasheet_A1M8_v3.0_en.pdf) |
 | SLAMTEC RPLIDAR A1M8-R5 | Tria |  1-10Hz | 8KHz | 0.15-12 | ~$99     |         | Class 1 |         | [PDF](https://www.slamtec.ai/wp-content/uploads/2023/11/LD108_SLAMTEC_rplidar_datasheet_A1M8_v3.0_en.pdf) |
-| 3irobotics Delta-2A  | Tria |  6.2Hz  | 5KHz    |         | ~$28     |         |         | 1K?     |      |
-| 3irobotics Delta-2G  | Tria |         |         |         | ~$17     |         |         |         |      |
-| Hitachi-LG HLS-LFCD2*| ToF  |   5Hz   | 1.8KHz  | 0.12-3.5|          |         | Class 1 | 10K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/) |
+| 3irobotics Delta-2A  | Tria | ~5.25Hz?| ~1.9KHz?| 0.15-5? | ~$28     |         |         | 1K?     |      |
+| 3irobotics Delta-2G  | Tria | ~5.25Hz?| ~1.9KHz?| 0.15-5? | ~$17     |         |         |         |      |
+| Hitachi-LG HLS-LFCD2*| ToF  |   5Hz   | 1.8KHz  | 0.12-3.5| ~$28     |         | Class 1 | 10K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/) |
 | Hitachi-LG HLS-LFCD3*| Tria |   5Hz   | 2.3KHz  | 0.16-8  | ~$17     | 1,000h  | Class 1 | 25K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_02/) |
 | LDROBOT LD14P*       | Tria | 2..8Hz  | 4KHz    | 0.1-8   | ~$47     | 2,200h  |         | 80K?    |      |
 | LDROBOT LD20*        |      |         |         |         |          |         |         |         |      |
