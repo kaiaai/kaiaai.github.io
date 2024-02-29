@@ -67,6 +67,10 @@ Video: RPLIDAR A1 working with ROS2 using micro-ROS, Arduino LDS library
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f8IYjfiXsMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+## ROS2 Companion Package
+
+Kaia.ai [robot firmware](https://github.com/kaiaai/firmware) forwards LDS raw data - obtained from the Arduino LDS library - to a PC running ROS2 and micro-ROS. The ROS2 PC [kaiaai_telemetry package](https://github.com/kaiaai/kaiaai/tree/humble/kaiaai_telemetry) receives the raw LDS data, decodes that data and publishes it to the ROS2 `/scan` topic. If you are a ROS2 developer or enthusiast, please feel free to take a loot - and reuse - the [kaiaai_telemetry package](https://github.com/kaiaai/kaiaai/tree/humble/kaiaai_telemetry) ROS2 package.
+
 ## Adapter Board
 Some of the LiDAR/LDS sensors listed above do not have built-in motor control. These sensors (LDS02RR, Neato XV11, Delta-2G, Delta-2A, etc.) therefore require an adapter PCB that implements motor control. Here are adapter PCBs:
 - [adapter PCB](https://github.com/makerspet/pcb/tree/main/lds02rr_adapter) for LDS02RR
