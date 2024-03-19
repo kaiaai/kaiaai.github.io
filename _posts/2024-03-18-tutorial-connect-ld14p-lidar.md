@@ -4,7 +4,7 @@ title:  "Tutorial: Connect LDLIDAR LD14P to Arduino ESP32"
 author: iliao
 categories: [ Arduino, library, LiDAR, LDS, ROS2, micro-ROS, ESP32 ]
 # tags: [red, yellow]
-image: assets/images/webp/lidar_sensors.webp
+image: assets/images/webp/LDROBOT_LD14P.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
 # featured: true
 # hidden: true
