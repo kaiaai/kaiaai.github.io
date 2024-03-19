@@ -31,6 +31,10 @@ Please note that online sellers also offer LD14P as part of the D200 evaluation 
 
 ## Connect LD14P to ESP32
 Follow these steps to connect LD14P to ESP32:
+- if the LD14P you purchased comes with a connector cable, consider using that connector cable for the ESP32 connection
+  - alternatively, order an LD14P-to-ESP32 cable from the makerspet.com online store (when the store opens later in 2024)
+  - if your LD14P does not have a connector cable, consider obtaining a 4-pin JST GH 1.25mm pitch header connector with wires (AliExpress, Amazon, eBay, etc.)
+  - alternatively, if you are experienced at soldering by hand, you might try cable soldering wires directly to the LD14P connector pins. That said, don't do this unless you know what you are doing because soldering can potentially damage your LD14P.
 - refering to [LD14P connector pinout](https://www.waveshare.com/wiki/D200_LiDAR_Kit), connect
   - LD14P VCC to 5V
   - LD14P GND to GND
