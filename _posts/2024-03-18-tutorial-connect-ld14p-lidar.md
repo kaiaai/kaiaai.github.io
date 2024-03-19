@@ -34,8 +34,8 @@ Follow these steps to connect LD14P to ESP32:
 - refering to [LD14P connector pinout](https://www.waveshare.com/wiki/D200_LiDAR_Kit), connect
   - LD14P VCC to 5V
   - LD14P GND to GND
-  - LD14P TX to ESP32 GPIO16
-  - LD14P PWR/RX to ESP32 GPIO15
+  - LD14P TX to ESP32 GPIO16 (RX)
+  - LD14P PWR/RX to ESP32 GPIO17 (TX)
 
 ## Set up LD14P with Arduino
 - install the latest [Arduino LDS library](https://github.com/kaiaai/LDS)
@@ -56,5 +56,4 @@ Video: LDROBOT LD14P connected to Arduino ESP32 and ROS2
 </div>
 
 ## Connecting LD14P to ROS2
-
 Please follow instructions in [this README](https://github.com/kaiaai/kaiaai) to connect Arduino ESP32 with LDLIDAR LD14P to a ROS2 PC over WiFi using micro-ROS.
