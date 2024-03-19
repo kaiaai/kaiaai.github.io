@@ -4,7 +4,7 @@ title:  "Tutorial: Connect LDLIDAR LD14P to Arduino ESP32"
 author: iliao
 categories: [ Arduino, library, LiDAR, LDS, ROS2, micro-ROS, ESP32 ]
 # tags: [red, yellow]
-image: assets/images/webp/LDROBOT_LD14P.webp
+image: assets/images/webp/ld14p_top_lowres.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
 # featured: true
 # hidden: true
@@ -40,6 +40,8 @@ Follow these steps to connect LD14P to ESP32:
   - LD14P GND to GND
   - LD14P TX to ESP32 GPIO16 (RX)
   - LD14P PWR/RX to ESP32 GPIO17 (TX)
+
+![LDROBOT LD14P laser distance sensor bottom](/assets/images/webp/ld14p_bottom.webp 'LDROBOT LD14P laser distance sensor bottom'){:class="zoom-image"}
 
 ## Set up LD14P with Arduino
 - install the latest [Arduino LDS library](https://github.com/kaiaai/LDS)
