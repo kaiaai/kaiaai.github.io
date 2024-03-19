@@ -34,7 +34,7 @@ Here is a list of supported and to-be-supported (*) low-cost LiDAR/LDS sensors. 
 | 3irobotics Delta-2G  | Tria | ~5.25Hz?| ~1.9KHz?| 0.15-5? | ~$17     |         |         |         |      |
 | Hitachi-LG HLS-LFCD2*| ToF  |   5Hz   | 1.8KHz  | 0.12-3.5| ~$28     |         | Class 1 | 10K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/) |
 | Hitachi-LG HLS-LFCD3*| Tria |   5Hz   | 2.3KHz  | 0.16-8  | ~$17     | 1,000h  | Class 1 | 25K?    | [Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_02/) |
-| LDROBOT LD14P        | Tria | 2..8Hz  | 4KHz    | 0.1-8   | ~$47     | 2,200h  |         | 80K?    | [Spec, Protocol](https://www.waveshare.com/wiki/D200_LiDAR_Kit) |
+| LDROBOT LD14P        | Tria | 2..8Hz  | 4KHz    | 0.1-8   | ~$35     | 2,200h  |         | 80K?    | [Spec, Protocol](https://www.waveshare.com/wiki/D200_LiDAR_Kit) |
 | LDROBOT LD20*        |      |         |         |         |          |         |         |         |      |
 | RPLIDAR C1*          |      |         |         |         |          |         |         |         |      |
 
