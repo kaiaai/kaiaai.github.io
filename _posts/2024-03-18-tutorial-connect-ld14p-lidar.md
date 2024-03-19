@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tutorial: Connect LDLIDAR LD14P LiDAR/LDS to Arduino ESP32"
+title:  "Tutorial: Connect LDLIDAR LD14P to Arduino ESP32"
 author: iliao
 categories: [ Arduino, library, LiDAR, LDS, ROS2, micro-ROS, ESP32 ]
 # tags: [red, yellow]
@@ -54,6 +54,7 @@ Video: LDROBOT LD14P connected to Arduino ESP32 and ROS2
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ebbHqs4lW0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<p></p>
 
 ## Connecting LD14P to ROS2
 Please follow instructions in [this README](https://github.com/kaiaai/kaiaai) to connect Arduino ESP32 with LDLIDAR LD14P to a ROS2 PC over WiFi using micro-ROS.
