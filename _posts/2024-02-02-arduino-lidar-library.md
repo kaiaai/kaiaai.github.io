@@ -15,7 +15,11 @@ Developer Update - I have combined support for various spinning LiDAR/LDS sensor
 
 Why support many LiDAR/LDS sensors? The reason is to make the hardware - supported by Kaia.ai platform - affordable to as many prospective users as possible. Some of the sensors listed below are sold as used robot vacuum cleaner spare parts and cost as low as $16 or so (including shipping) available on AliExpress.
 
-Here is a list of supported and to-be-supported (*) low-cost LiDAR/LDS sensors. "Tria" indicates triangulation LDS, as opposed to "ToF" time-of-flight LiDARs. You can purchase these sensors off AliExpress, Amazon, eBay and online stores that cater to robotics enthusiasts. The retail prices are approximate, as of 02/2024. The safety class indicates what the model's official datasheet says available. Some LiDAR/LDS models do not have official datasheets available publically.
+Here is a list of supported and to-be-supported (*) low-cost LiDAR/LDS sensors. "Tria" indicates triangulation LDS, as opposed to "ToF" time-of-flight LiDARs. You can purchase these sensors off AliExpress, Amazon, eBay and online stores that cater to robotics enthusiasts. The retail prices are approximate, as of 02/2024. The safety class indicates what the model's official datasheet says available.
+
+Please note:
+- some LiDAR/LDS models do not have official datasheets available publically
+- there is plenty of incorrect, conflicting and/or confusing LiDAR/LDS specifications and protocol information out there. Some of the information in the table below may be incorrect.
 
 | Model                | Type | Scans   | Points  | Range   | Cost     | Service | Safety  | Ambient | Spec |
 |                      |      | per sec | per sec | meters  | retail   | life    |         | Lux     |      |
