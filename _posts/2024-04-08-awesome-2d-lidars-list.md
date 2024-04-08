@@ -4,7 +4,7 @@ title:  "Awesome 2D LiDAR List Launched"
 author: iliao
 categories: [ LiDAR, LDS ]
 # tags: [red, yellow]
-image: assets/images/webp/ld14p_top_lowres.webp
+image: assets/images/webp/Camsense_X1_top_side.webp
 # description: "Tutorial: bot hides, plays ball in manual simulation"
 # featured: true
 # hidden: true
