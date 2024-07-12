@@ -17,9 +17,9 @@ layout: post
 title: What Is Kaia.ai
 author: iliao
 categories: [ Support ]
-image: assets/images/webp/kaia_avatar_395x395.webp
-featured: true
-hidden: true
+image: assets/images/webp/kaia_avatar_500x397.webp
+featured: false
+hidden: false
 # comments: true
 # tags: [red, yellow]
 # rating: .5
