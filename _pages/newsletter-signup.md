@@ -6,9 +6,9 @@ comments: false
 ---
 
 <div class="row">
+  <div class="col-md-12">
   <div class="text-center">
-    <div class="col-md-12">
       {% include signup-form.html %}
     </div>
-    </div>
+  </div>
 </div>
