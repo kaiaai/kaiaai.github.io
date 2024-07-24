@@ -12,16 +12,17 @@ comments: false
         </div>
     </div>
 
-    <div class="col-md-8 pt-4">
-        <p>A large community lowers product cost for you – and everyone.<br>
-        Will you please help us by letting your friends know about us?</p>
+  <div class="col-md-8 pt-4">
 
-        <p>Also, here are our "3D Printable Home Robots" <a href="{{site.facebook_group_url}}">Facebook group</a>
-        and <a href="{{site.reddit_group_url}}">Reddit</a>!</p>
+    <p>A large community lowers product cost for you – and everyone.<br>
+    Will you please help us by letting your friends know about us?</p>
 
-        {% include share-horizontal.html %}
+    <p>Also, here are our "3D Printable Home Robots" <a href="{{site.facebook_group_url}}">Facebook group</a>
+    and <a href="{{site.reddit_group_url}}">Reddit</a>!</p>
 
-    </div>
+    {% include share-horizontal.html %}
+
+  </div>
 </div>
 
 <script id="confetti-trigger">document.addEventListener( 'DOMContentLoaded', function( event ) { document.dispatchEvent( new CustomEvent( 'confetti' ) ); } );
