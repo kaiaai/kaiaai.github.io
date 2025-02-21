@@ -4,8 +4,8 @@ title: Support Forum Launched
 author: iliao
 categories: [ Support ]
 image: assets/images/webp/support_bot.webp
-featured: true
-hidden: true
+# featured: true
+# hidden: true
 # comments: true
 # tags: [red, yellow]
 # rating: .5
