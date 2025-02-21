@@ -12,7 +12,7 @@ hidden: true
 # comments: false
 ---
 
-Here is a list [Kaia.ai](https://github.com/kaiaai) software and firmware downloads. Everything is open-source!
+Here is a list of [Kaia.ai](https://github.com/kaiaai) software and firmware downloads. Everything is open-source!
 
 Arduino-compatible firmware:
 - Kaia.ai [Arduino-compatible firmware](https://github.com/kaiaai/firmware) for ROS2-based robots
