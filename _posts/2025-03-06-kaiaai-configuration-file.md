@@ -14,7 +14,7 @@ image: assets/images/webp/four_makerspet_esp32_boards.webp
 
 Kaia.ai firmware works with a wide variety of ESP32 boards, supports robots of different sizes, with various Lidars, motors, motor drivers and motor encoders - all thanks to a
 [configuration file](https://github.com/kaiaai/firmware/blob/iron/kaiaai-esp32/data/config.yaml)
-where you can specify your GPIO assignments. Configuring Kaia.ai for your particular robot, board and its peripherals can be as easy as editing a text file called 'config.yaml'. Kaia.ai firmware loads and parses this `config.yaml` file at boot time.
+where you can specify your GPIO assignments. Configuring Kaia.ai for your particular robot, board and its peripherals can be as easy as editing a text file called `config.yaml`. Kaia.ai firmware loads and parses this `config.yaml` file at boot time.
 
 In this post I will present a `config.yaml` example along with detailed explanations.
 You can find more sample `config.yaml` files for various ESP32 models and Maker's Pet boards and robots [here](https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data).
@@ -150,7 +150,7 @@ board:
   version: v1.1.1
 ```
 
-The 'lidar' top-level tag contains ESP32 GPIO assignments for the Lidar port. You can ignore this section if you don't use a Lidar. If your Lidar does not have some of the pins listed below, you can leave those assignments unchanged (they will be ignored) or commend those lines out.
+The `lidar` top-level tag contains ESP32 GPIO assignments for the Lidar port. You can ignore this section if you don't use a Lidar. If your Lidar does not have some of the pins listed below, you can leave those assignments unchanged (they will be ignored) or commend those lines out.
 ```
 lidar:
   gpio:
@@ -160,7 +160,7 @@ lidar:
     en: 32
 ```
 
-The 'led' top-level tag contains the system LED GPIO configure. The configuration example below is specifically for 30-pin ESP32 DOIT DevKit v1 modules that have an integrated LED connected to GPIO2. Other ESP32 modules may have a different GPIO LED assignment, a different type of LED (serial instead of driven directly by the GPIO) or may not have an integrated LED at all. You can find and reuse examples for various ESP32, ESP32S3, ESP32E, Arduino ESP32S3 Nano boards here https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data.
+The `led` top-level tag contains the system LED GPIO configure. The configuration example below is specifically for 30-pin ESP32 DOIT DevKit v1 modules that have an integrated LED connected to GPIO2. Other ESP32 modules may have a different GPIO LED assignment, a different type of LED (serial instead of driven directly by the GPIO) or may not have an integrated LED at all. You can find and reuse examples for various ESP32, ESP32S3, ESP32E, Arduino ESP32S3 Nano boards here https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data.
 ```
 led:
   system:
@@ -170,7 +170,7 @@ led:
       invert: false
 ```
 
-The 'button' configuration assigns a GPIO to the `BOOT` button for the 30-pin ESP32. The choice of this GPIO may vary across ESP32 modules and boards. See https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data for examples.
+The `button` configuration assigns a GPIO to the `BOOT` button for the 30-pin ESP32. The choice of this GPIO may vary across ESP32 modules and boards. See https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data for examples.
 ```
 button:
   boot:
@@ -178,14 +178,14 @@ button:
     invert: true
 ```
 
-'monitor'assigns a GPIO to the Arduino Serial Monitor (30-pin ESP32 boards in this example).
+`monitor` assigns a GPIO to the Arduino Serial Monitor (30-pin ESP32 boards in this example).
 ```
 monitor:
   gpio:
     tx: 1
 ```
 
-'motor' specifies the motor driver and motor encoder types. Simply speaking, Kaia.ai firmware supports two motor types:
+`motor` specifies the motor driver and motor encoder types. Simply speaking, Kaia.ai firmware supports two motor types:
 - brushed DC with motor (driver type `IN1_IN2`) with quadrature encoder (encoder type `AB_QUAD`). This type of motor (popular low-cost N20, JGA25, etc.) have `MOTOR+` and `MOTOR-` motor inputs, directly driven usually by L298N, TB6612FNG or similar driver ICs that have `IN1` and `IN2` inputs. The quadrature encoder `AB_QUAD` has two outputs `A` and `B` (sometimes named `C1`, `C2` or similar).
 - brushless DC motor with built-in ESC controller. Motors like this (driver type `PWM_CW`, encoder type `FG`) have `PWM` (speed) and `CW` (rotation direction) inputs and `FG` encoder output.
 
@@ -229,7 +229,7 @@ Set your GPIOs for the right motor here.
         in2: 22
 ```
 
-Optionally, in the 'adc' section, assign a GPIO analog input to track the battery voltage. If your battery voltage higher than what ESP32 GPIO can handle, you can use a resistor divider to attenuate the battery voltage. For example, if you are using a 9V battery, you can make a resistor divider that divides the battery voltage 7x before feeding it to the ESP32 ADC GPIO input. The full and empty battery voltage settings help calculating the percentage of charge left in the battery.
+Optionally, in the `adc` section, assign a GPIO analog input to track the battery voltage. If your battery voltage higher than what ESP32 GPIO can handle, you can use a resistor divider to attenuate the battery voltage. For example, if you are using a 9V battery, you can make a resistor divider that divides the battery voltage 7x before feeding it to the ESP32 ADC GPIO input. The full and empty battery voltage settings help calculating the percentage of charge left in the battery.
 ```
 adc:
   battery:
@@ -242,7 +242,7 @@ adc:
 
 So far we have configured the board-related assignments. The rest of the file configures the robot-related parameters.
 
-In the 'lidar' section, choose your Lidar model from the list of supported sensors and set the desired scan speed (if supported by firmware and your Lidar). If you are not using a Lidar, just leave this section unchanged.
+In the `lidar` section, choose your Lidar model from the list of supported sensors and set the desired scan speed (if supported by firmware and your Lidar). If you are not using a Lidar, just leave this section unchanged.
 ```
 #
 # Peripherals configuration
@@ -268,13 +268,13 @@ lidar:
       target: 5.0
 ```
 
-Set the Arduino Serial Monitor baud rate in the 'monitor' section.
+Set the Arduino Serial Monitor baud rate in the `monitor` section.
 ```
 monitor:
   baud: 115200
 ```
 
-'base.wheel.track' specifies the istance between your wheels in meters. More specifically, it is the distance between the midpoints of your tires.
+`base.wheel.track` specifies the istance between your wheels in meters. More specifically, it is the distance between the midpoints of your tires.
 ```
 base:
   wheel:
