@@ -17,8 +17,7 @@ Kaia.ai firmware works with a wide variety of ESP32 boards, supports robots of d
 where you can specify your GPIO assignments. Configuring Kaia.ai for your particular robot, board and its peripherals can be as easy as editing a text file called 'config.yaml'. Kaia.ai firmware loads and parses this `config.yaml` file at boot time.
 
 In this post I will present a `config.yaml` example along with detailed explanations.
-You can find more sample `config.yaml` files for various ESP32 models and Maker's Pet boards and robots 
-![alt text](four_makerspet_esp32_boards.webp)[here](https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data).
+You can find more sample `config.yaml` files for various ESP32 models and Maker's Pet boards and robots [here](https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data).
 
 Follow instructions in the video below to upload your off-the-shelf or custom `config.yaml` to ESP32 in Arduino.
 
