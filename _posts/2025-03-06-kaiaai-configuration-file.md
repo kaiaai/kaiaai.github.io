@@ -135,7 +135,9 @@ motor:
     ppr: 1035
 ```
 
-In this example that works with TB6612FNG.
+## Detailed Explanations
+
+Let's start with the `board` top-level tag.
 
 Here you can specify your board or DIY hardware name and version. Kaia.ai just prints out this information to Arduino Serial Monitor for identification purposes. The `#` hash character comments at the beginning of a text line acts as a comment.
 ```
@@ -148,7 +150,7 @@ board:
   version: v1.1.1
 ```
 
-ESP32 GPIO assignments for the Lidar port. You can ignore this section if you don't use a Lidar. If your Lidar does not have some of the pins listed below, you can leave those assignments unchanged (they will be ignored) or commend those lines out.
+The 'lidar' top-level tag contains ESP32 GPIO assignments for the Lidar port. You can ignore this section if you don't use a Lidar. If your Lidar does not have some of the pins listed below, you can leave those assignments unchanged (they will be ignored) or commend those lines out.
 ```
 lidar:
   gpio:
@@ -158,7 +160,7 @@ lidar:
     en: 32
 ```
 
-These lines configure the system LED GPIO. The configuration example below is specifically for 30-pin ESP32 DOIT DevKit v1 modules that have an integrated LED connected to GPIO2. Other ESP32 modules may have a different GPIO LED assignment, a different type of LED (serial instead of driven directly by the GPIO) or may not have an integrated LED at all. You can find and reuse examples for various ESP32, ESP32S3, ESP32E, Arduino ESP32S3 Nano boards here https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data
+The 'led' top-level tag contains the system LED GPIO configure. The configuration example below is specifically for 30-pin ESP32 DOIT DevKit v1 modules that have an integrated LED connected to GPIO2. Other ESP32 modules may have a different GPIO LED assignment, a different type of LED (serial instead of driven directly by the GPIO) or may not have an integrated LED at all. You can find and reuse examples for various ESP32, ESP32S3, ESP32E, Arduino ESP32S3 Nano boards here https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data.
 ```
 led:
   system:
@@ -168,7 +170,7 @@ led:
       invert: false
 ```
 
-These lines assign a GPIO to the `BOOT` button for the 30-pin ESP32. The choice of this GPIO may vary across ESP32 modules and boards. See https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data for examples.
+The 'button' configuration assigns a GPIO to the `BOOT` button for the 30-pin ESP32. The choice of this GPIO may vary across ESP32 modules and boards. See https://github.com/kaiaai/firmware/tree/iron/kaiaai-esp32/data for examples.
 ```
 button:
   boot:
@@ -176,14 +178,14 @@ button:
     invert: true
 ```
 
-This is the GPIO assigned to the Arduino Serial Monitor (30-pin ESP32 boards in this example).
+'monitor'assigns a GPIO to the Arduino Serial Monitor (30-pin ESP32 boards in this example).
 ```
 monitor:
   gpio:
     tx: 1
 ```
 
-These lines specify the motor driver and motor encoder type. Simply speaking, Kaia.ai firmware supports two motor types:
+'motor' specifies the motor driver and motor encoder types. Simply speaking, Kaia.ai firmware supports two motor types:
 - brushed DC with motor (driver type `IN1_IN2`) with quadrature encoder (encoder type `AB_QUAD`). This type of motor (popular low-cost N20, JGA25, etc.) have `MOTOR+` and `MOTOR-` motor inputs, directly driven usually by L298N, TB6612FNG or similar driver ICs that have `IN1` and `IN2` inputs. The quadrature encoder `AB_QUAD` has two outputs `A` and `B` (sometimes named `C1`, `C2` or similar).
 - brushless DC motor with built-in ESC controller. Motors like this (driver type `PWM_CW`, encoder type `FG`) have `PWM` (speed) and `CW` (rotation direction) inputs and `FG` encoder output.
 
@@ -195,7 +197,7 @@ motor:
     type: AB_QUAD
 ```
 
-Here is where you assign GPIO input to track the left motor quadrature encoder. If your motor is brushless with `fg` output, specify `fg
+Here is where you assign GPIO input to track the left motor quadrature encoder. If your motor is brushless with `fg` output, specify the GPIO number associated with `FG`. For example, `fg: 39`.
 ```
   left:
     encoder:
@@ -204,9 +206,9 @@ Here is where you assign GPIO input to track the left motor quadrature encoder. 
         b: 36
 ```
 
-Here is where you assign GPIO outputs to your brushed motor driver IC (L298N, TB6612FNG, etc.) or to your brushless motor with built-in driver (using `fg: xx`).
+Here is where you assign GPIO outputs to your brushed motor driver IC (L298N, TB6612FNG, etc.) or to your brushless motor with built-in driver (using `pwm: xx` and `cw: xx`).
 
-If your motors don't work, rotate in the wrong direction or don't stop rotating - check the driver and encoder GPIO assignments. In particular, check if driver `in1` and `in2` GPIO assignments need to be swapped. Same goes for encoder `a` and `b` GPIO assignments.
+If your motors don't seem to work during your robot bring-up - including not rotating, rotating in the wrong direction and rotation never stopping - check the driver and encoder GPIO assignments. In particular, check if driver `in1` and `in2` GPIO assignments need to be swapped. Same goes for encoder `a` and `b` GPIO assignments.
 ```
     driver:
       gpio:
@@ -214,7 +216,7 @@ If your motors don't work, rotate in the wrong direction or don't stop rotating 
         in2: 25
 ```
 
-Set your GPIOs for the right motor.
+Set your GPIOs for the right motor here.
 ```
   right:
     encoder:
@@ -227,7 +229,7 @@ Set your GPIOs for the right motor.
         in2: 22
 ```
 
-Optionally, assign a GPIO analog input to track the battery voltage. If your battery voltage higher than what ESP32 GPIO can handle, you can use a resistor divider to attenuate the battery voltage. For example, if you are using a 9V battery, you can make a resistor divider that divides the battery voltage 7x before feeding it to the ESP32 ADC GPIO input. The full and empty battery voltage settings help calculating the percentage of charge left in the battery.
+Optionally, in the 'adc' section, assign a GPIO analog input to track the battery voltage. If your battery voltage higher than what ESP32 GPIO can handle, you can use a resistor divider to attenuate the battery voltage. For example, if you are using a 9V battery, you can make a resistor divider that divides the battery voltage 7x before feeding it to the ESP32 ADC GPIO input. The full and empty battery voltage settings help calculating the percentage of charge left in the battery.
 ```
 adc:
   battery:
@@ -240,7 +242,7 @@ adc:
 
 So far we have configured the board-related assignments. The rest of the file configures the robot-related parameters.
 
-Choose your Lidar from the list of supported sensors and set the desired scan speed (if supported by firmware and your Lidar). If you are not using a Lidar, just leave this section unchanged.
+In the 'lidar' section, choose your Lidar model from the list of supported sensors and set the desired scan speed (if supported by firmware and your Lidar). If you are not using a Lidar, just leave this section unchanged.
 ```
 #
 # Peripherals configuration
@@ -266,36 +268,36 @@ lidar:
       target: 5.0
 ```
 
-Set the Arduino Serial Monitor baud rate.
+Set the Arduino Serial Monitor baud rate in the 'monitor' section.
 ```
 monitor:
   baud: 115200
 ```
 
-Distance between your wheels. More specifically, it is the distance between the midpoints of your tires.
+'base.wheel.track' specifies the istance between your wheels in meters. More specifically, it is the distance between the midpoints of your tires.
 ```
 base:
   wheel:
     track: 0.105043
 ```
 
-Your outer wheel (tire) diameter.
+`base.wheel.diameter` specifies your outer wheel (tire) diameter in meters.
 ```
     diameter: 0.043
 ```
 
-Your robot's maximum allowed acceleration. For example
-- increase the acceleration if your robot motors and power supply can handle the load
-- decrease the max acceleration if
-  - your robot wheels slip
-  - your motors are not powerful enough (for the given robot's weight) to achieve the max acceleration
-  - your motor driver or motor power supply cannot supply enough current
+`base.wheel.accel.max` sets your robot's maximum allowed acceleration. For example, increase the acceleration if your robot motors and power supply can handle the load.
+
+Decrease the max acceleration if
+- your robot wheels slip
+- your motors are not powerful enough (for the given robot's weight) to achieve the max acceleration
+- your motor driver or motor power supply cannot supply enough current
 ```
     accel:
       max: 2.0
 ```
 
-Your motor max RPM taken from your motor's datasheet, derated (i.e. multiplied by ~0.9). The derating factor is necessary because actual max RPM varies from motor to motor, so letting both motors run at their max RPM often causes the robot veer off the straight path.
+`motor.rpm.max` sets your motor maximum RPM (revolutions per minute) taken from your motor's datasheet and derated (i.e. multiplied by ~0.9). The derating factor is necessary because the actual max RPM varies from motor to motor. Therefore, letting both motors run at their max RPM without derating often causes the robot veer off the straight path.
 ```
 motor:
   rpm:
@@ -303,7 +305,7 @@ motor:
     max: 180
 ```
 
-Kaia.ai firmware controls motors using a PID controller. Set the PID controller coefficients here. Check these settings if your motors lag or oscillate. `period` is how often the PID gets updated. `kp`, `ki`, `kd` and `kpm` are the proportional (AKA proportional-on-error), integral, derivative and proportional-on-measurement gain coefficients respectively. PID tuning is a topic worth a separate post.
+Kaia.ai firmware controls motors using a PID controller. Set the PID controller coefficients in the `motor.driver.pid` section. Check these settings if your motors lag or oscillate. `motor.driver.pid.period` is how often the PID gets updated, in seconds. `kp`, `ki`, `kd` and `kpm` are the proportional (AKA proportional-on-error), integral, derivative and proportional-on-measurement gain coefficients respectively. PID tuning is a topic worth a separate post.
 ```
   driver:
     pid:
@@ -314,7 +316,7 @@ Kaia.ai firmware controls motors using a PID controller. Set the PID controller 
       kpm: 0
 ```
 
-Lastly, `ppr` is the number of pulses the motor encoder outputs per one rotation of the motors shaft (i.e. the motor gearbox output).
+Lastly, `motor.driver.encoder.ppr` sets the the number of pulses the motor encoder outputs per one rotation of the motors shaft (i.e. the motor gearbox output).
 ```
   encoder:
     ppr: 1035
