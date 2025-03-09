@@ -321,3 +321,51 @@ Lastly, `motor.driver.encoder.ppr` sets the the number of pulses the motor encod
   encoder:
     ppr: 1035
 ```
+
+## Configure LiDAR model in ROS2
+
+As of March 2025, if your robot's LiDAR model differs from the default one provided in the Kaia.ai Docker image (e.g. `LDROBOT LD14P` for Maker's Pet Mini), you will need to edit the ROS2 configuration - in addition to editing `config.yaml` as described above.
+
+Here are steps to change the default LiDAR model.
+
+- Launch a `kaiaai/kaiaai:iron` Docker container as [described here](https://makerspet.com/blog/BLD-120MM-PACK/)
+- execute these commands in the Docker Bash shell to edit Maker's Pet [Mini telem.yaml](https://github.com/makerspet/makerspet_mini/blob/iron/config/telem.yaml) file
+
+```
+cd /ros_ws/src/makerspet_mini/config
+pico telem.yaml
+```
+
+- change `lidar_model: "LDROBOT-LD14P"` to one of the compatible LiDAR models below
+  - `CAMSENSE-X1`, `3IROBOTIX-DELTA-2A`, `3IROBOTIX-DELTA-2B`, `3IROBOTIX-DELTA-2G`, `LDROBOT-LD14P`, `XIAOMI-LDS02RR`, `NEATO-XV11`, `SLAMTEC-RPLIDAR-A1`, `YDLIDAR-SCL`, `YDLIDAR-X2-X2L`, `YDLIDAR-X3`, `YDLIDAR-X3-PRO`, `YDLIDAR-X4`
+  - for example, `lidar_model: "3IROBOTIX-DELTA-2G"`
+- save the edited file (Ctrl-X, Y, Enter)
+- back up your `telem.yaml` because your changes will be lost once the Docker container is destroyed
+
+```
+cp telem.yaml ~/maps/
+```
+
+- restore your modified `telem.yaml` file - or persist it permanently as described later in this post - next time you launch a new Kaia.ai container
+
+```
+cp ~/maps/telem.yaml /ros_ws/src/makerspet_mini/config/
+```
+
+## Configure Custom Robot Size in ROS2
+
+If your robot's base dimensions differ from the default ones provided in the Kaia.ai Docker image (e.g. Maker's Pet Mini, Loki, Fido or Snoopy), you will need to edit the ROS2 robot configuration as well.
+
+- `cd /ros_ws/src/makerspet_mini/config`
+- edit these files to specify your custom robot's parameters
+  - in `teleop_keyboard.yaml` set your robot's maximum and minimum linear and angular speed limits and steps
+  - in `telem.yaml` set the battery voltage range
+  - in `/ros_ws/src/makerspet_mini/urdf/robot.urdf.xacro` set your robot's`wheel_base`, `base_diameter`, `wheel_diameter` and `wheel_width`.
+- back up your edited files
+- restore - or persist permanently as described below - your edited files when you launch a new container
+
+## Optionally, Persist Your ROS2 Configuration Changes
+
+If you need to keep your changes permanently in the Docker image, you will need to build your own Docker image for your custom robot. Here are `kaiaai/kaiaai` [Docker image](https://github.com/kaiaai/install) build scripts for your reference.
+
+Detailed instructions TODO.
