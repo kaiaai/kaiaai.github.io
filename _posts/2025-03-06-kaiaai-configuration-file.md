@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kaia.ai Firmware Configuration File
+title: Kaia.ai Firmware, ROS2 Configuration Files
 author: iliao
 categories: [ Support ]
 image: assets/images/webp/four_makerspet_esp32_boards.webp
