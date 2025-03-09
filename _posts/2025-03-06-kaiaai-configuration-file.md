@@ -329,11 +329,10 @@ As of March 2025, if your robot's LiDAR model differs from the default one provi
 Here are steps to change the default LiDAR model.
 
 - Launch a `kaiaai/kaiaai:iron` Docker container as [described here](https://makerspet.com/blog/BLD-120MM-PACK/)
-- execute these commands in the Docker Bash shell to edit Maker's Pet [Mini telem.yaml](https://github.com/makerspet/makerspet_mini/blob/iron/config/telem.yaml) file
+- edit Maker's Pet [Mini telem.yaml](https://github.com/makerspet/makerspet_mini/blob/iron/config/telem.yaml) file in the Docker Bash shell
 
 ```
-cd /ros_ws/src/makerspet_mini/config
-pico telem.yaml
+pico /ros_ws/src/makerspet_mini/config/telem.yaml
 ```
 
 - change `lidar_model: "LDROBOT-LD14P"` to one of the [compatible LiDAR models](https://github.com/kaiaai/kaiaai_telemetry/blob/iron/config/telem.yaml):
@@ -343,7 +342,7 @@ pico telem.yaml
 - back up your `telem.yaml` because your changes will be lost once the Docker container is destroyed
 
 ```
-cp telem.yaml ~/maps/
+cp /ros_ws/src/makerspet_mini/config/telem.yaml ~/maps/
 ```
 
 - restore your modified `telem.yaml` file - or persist it permanently as described later in this post - next time you launch a new Kaia.ai container
