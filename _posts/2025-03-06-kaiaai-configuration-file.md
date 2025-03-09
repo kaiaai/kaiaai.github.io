@@ -336,9 +336,9 @@ cd /ros_ws/src/makerspet_mini/config
 pico telem.yaml
 ```
 
-- change `lidar_model: "LDROBOT-LD14P"` to one of the compatible LiDAR models below
-  - `CAMSENSE-X1`, `3IROBOTIX-DELTA-2A`, `3IROBOTIX-DELTA-2B`, `3IROBOTIX-DELTA-2G`, `LDROBOT-LD14P`, `XIAOMI-LDS02RR`, `NEATO-XV11`, `SLAMTEC-RPLIDAR-A1`, `YDLIDAR-SCL`, `YDLIDAR-X2-X2L`, `YDLIDAR-X3`, `YDLIDAR-X3-PRO`, `YDLIDAR-X4`
-  - for example, `lidar_model: "3IROBOTIX-DELTA-2G"`
+- change `lidar_model: "LDROBOT-LD14P"` to one of the [compatible LiDAR models](https://github.com/kaiaai/kaiaai_telemetry/blob/iron/config/telem.yaml):
+  - `YDLIDAR-X4`, `XIAOMI-LDS02RR`, `YDLIDAR-X2-X2L`, `YDLIDAR-X3-PRO`, `YDLIDAR-X3-PRO`,`YDLIDAR-X3`, `NEATO-XV11`, `RPLIDAR-A1`, `DELTA-2G`, `DELTA-2A`, `DELTA-2B`, `LDROBOT-LD14P`,`CAMSENSE-X1`, `YDLIDAR-SCL`
+  - for example, `lidar_model: "DELTA-2G"`
 - save the edited file (Ctrl-X, Y, Enter)
 - back up your `telem.yaml` because your changes will be lost once the Docker container is destroyed
 
