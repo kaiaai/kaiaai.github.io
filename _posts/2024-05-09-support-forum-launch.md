@@ -10,6 +10,7 @@ image: assets/images/webp/support_bot.webp
 # tags: [red, yellow]
 # rating: .5
 # comments: false
+redirect_to: https://kaia.ai/blog/articles-moved-to-makerspet/
 ---
 
 We have launch a [support forum](https://github.com/makerspet/support/discussions/) for Maker's Pet and Kaia.ai 🙋‍♂️🙋‍♀️!

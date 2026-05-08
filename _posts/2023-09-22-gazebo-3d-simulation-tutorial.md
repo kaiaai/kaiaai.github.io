@@ -10,6 +10,7 @@ image: assets/images/webp/snoopy_sim_ball.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/gazebo-3d-simulation-tutorial/
 ---
 Here is a step-by-step tutorial simulating Snoopy home robot in 3D VR using the Gazebo ROS2 simulator. 
 I'm using here a Windows PC running ROS2 in a Docker container. You can use a Linux PC running Docker as well.

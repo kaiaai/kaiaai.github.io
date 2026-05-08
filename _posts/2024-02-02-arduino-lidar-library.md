@@ -10,6 +10,7 @@ image: assets/images/webp/lidar_sensors.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/arduino-lidar-library/
 ---
 Developer Update - I have combined support for various spinning LiDAR/LDS sensors into an [Arduino LDS library](https://github.com/kaiaai/LDS) with a single platform API. You can install this library from the Arduino Library Manager GUI.
 

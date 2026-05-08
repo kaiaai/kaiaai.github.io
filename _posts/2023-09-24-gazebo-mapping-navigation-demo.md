@@ -10,6 +10,7 @@ image: assets/images/webp/snoopy-mapping-gazebo.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/gazebo-mapping-navigation-demo/
 ---
 Here are reels demonstrating a Kaia.ai home robot self-driving around the living room,
 creating a map of the room and navigating the room - all automatically.

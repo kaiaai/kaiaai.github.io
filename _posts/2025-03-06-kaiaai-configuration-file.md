@@ -10,6 +10,7 @@ image: assets/images/webp/four_makerspet_esp32_boards.webp
 # tags: [red, yellow]
 # rating: .5
 # comments: false
+redirect_to: https://makerspet.com/blog/kaiaai-configuration-file/
 ---
 
 Kaia.ai firmware works with a wide variety of ESP32 boards, supports robots of different sizes, with various Lidars, motors, motor drivers and motor encoders - all thanks to a

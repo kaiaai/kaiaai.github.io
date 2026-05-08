@@ -10,6 +10,7 @@ image: assets/images/webp/ros-embedded-wg-talk.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/ros2-micro-ros-architecture-talk/
 ---
 On 2/27/2024 I had the pleasure of giving an invited technical talk for the ROS Embedded Working Group.
 

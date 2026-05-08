@@ -10,6 +10,7 @@ image: assets/images/webp/ld14p_top_lowres.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/tutorial-connect-ld14p-lidar/
 ---
 LDROBOT LD14P is a low-cost laser distance sensor. We have not yet evaluated its performance, but eyeballing this sensor's output under indoor conditions makes us believe this sensor may have a reasonable performance.
 

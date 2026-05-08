@@ -10,6 +10,7 @@ image: assets/images/webp/Camsense_X1_top_side.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/awesome-2d-lidars-list/
 ---
 We have created an [Awesome 2D LiDARs](https://github.com/kaiaai/awesome-2d-lidars) list on GitHub. The list includes the LiDAR specifications, protocols, wiring diagrams, software interface code, identification photos and videos as well as performance evaluations (when available).
 

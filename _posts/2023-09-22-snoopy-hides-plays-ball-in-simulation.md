@@ -10,6 +10,7 @@ image: assets/images/webp/gazebo_maldives.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/snoopy-hides-plays-ball-in-simulation/
 ---
 Here are reels demonstrating your home
 robot self-driving around the living room, hiding under the table (as in hide-and-seek),

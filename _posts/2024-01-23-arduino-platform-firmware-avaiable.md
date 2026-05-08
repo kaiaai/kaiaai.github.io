@@ -10,6 +10,7 @@ image: assets/images/webp/kaiaai_robot_configurator.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/arduino-platform-firmware-avaiable/
 ---
 Developer log update - I have combined various Kaia.ai-compatible firmware including Maker's Pet [Loki](https://github.com/makerspet/makerspet_loki/), [Fido](https://github.com/makerspet/makerspet_fido/) and [Snoopy](https://github.com/makerspet/makerspet_snoopy/) into a [single "platform"](https://github.com/kaiaai/firmware/) firmware repository and revised the single firmware to be configurable using a web browser.
 

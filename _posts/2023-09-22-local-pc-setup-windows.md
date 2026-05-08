@@ -10,6 +10,7 @@ image: assets/images/webp/pc-setup.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/local-pc-setup-windows/
 ---
 Here are instructions on setting up your local Windos PC.
 

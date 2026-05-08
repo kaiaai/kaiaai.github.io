@@ -10,6 +10,7 @@ image: assets/images/webp/micro-ros-arduino-logos.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/rebuild-micro-ros-arduino-library/
 ---
 Kaia.ai makes use of [Micro-ROS for Arduino](https://github.com/micro-ROS/micro_ros_arduino).
 This article provides step-by-step instructions on how to (re)build the Micro-ROS

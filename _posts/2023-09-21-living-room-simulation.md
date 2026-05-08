@@ -10,6 +10,7 @@ image: assets/images/webp/gazebo_maldives.webp
 # tags: [red, yellow]
 # rating: .5
 # comments: false
+redirect_to: https://makerspet.com/blog/living-room-simulation/
 ---
 I'd like to share a simulated world I just made (my first). The simulator is called [Gazebo](https://gazebosim.org) - it is used for ROS2 robotic simulations.
 

@@ -10,6 +10,7 @@ image: assets/images/webp/snoopy-mapping-gazebo.webp
 # hidden: true
 # comments: false
 # rating: 4.5
+redirect_to: https://makerspet.com/blog/gazebo-mapping-navigation-tutorial/
 ---
 Here is a step-by-step tutorial creating a map of the room and navigating around the room using the newly-created map.
 The simulation runs in ROS2 Gazebo. I'm using here a Windows PC running ROS2 in a Docker container.
