@@ -10,7 +10,7 @@ featured: true
 hidden: true
 # comments: false
 # rating: 4.5
-redirect_to: https://kaia.ai/blog/articles-moved-to-makerspet/
+redirect_to: https://kaia.ai/
 ---
 Please pardon the dust - we are setting things up!
 

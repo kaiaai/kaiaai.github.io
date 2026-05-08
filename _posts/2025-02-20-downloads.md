@@ -10,7 +10,7 @@ hidden: true
 # tags: [red, yellow]
 # rating: .5
 # comments: false
-redirect_to: https://kaia.ai/blog/articles-moved-to-makerspet/
+redirect_to: https://kaia.ai/
 ---
 
 Here is a list of [Kaia.ai](https://github.com/kaiaai) software and firmware downloads and documentation. Everything is open-source!
